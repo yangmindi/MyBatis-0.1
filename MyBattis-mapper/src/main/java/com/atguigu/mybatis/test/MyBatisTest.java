@@ -12,6 +12,8 @@ import org.testng.annotations.Test;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.HashMap;
+import java.util.Map;
 
 
 public class MyBatisTest {
@@ -118,8 +120,13 @@ public class MyBatisTest {
         SqlSession openSession = sqlSessionFactory.openSession();
         try {
             EmployeeMapper mapper = openSession.getMapper(EmployeeMapper.class);
-            Employee jerry = mapper.getEmpByIdAndLastName(1, "jerry");
-            System.out.println(jerry);
+//            Employee jerry = mapper.getEmpByIdAndLastName(1, "jerry");
+//            System.out.println(jerry);
+            Map<String,Object> map = new HashMap();
+            map.put("id",1);
+            map.put("lastName","jerry");
+            Employee empByMap = mapper.getEmpByMap(map);
+            System.out.println(empByMap);
         }finally {
             openSession.close();
         }
