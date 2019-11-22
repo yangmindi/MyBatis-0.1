@@ -93,12 +93,13 @@ public class MyBatisTest {
         try {
             //测试添加
             EmployeeMapper mapper = openSession.getMapper(EmployeeMapper.class);
-//            Employee employee = new Employee(null,"jerry","jerry@atguigu","1");
-//            mapper.addEmp(employee);
+            Employee employee = new Employee(null,"jerry","jerry@atguigu","1");
+            mapper.addEmp(employee);
+            System.out.println(employee.getId());
             //测试修改
-            Employee employee = new Employee(1,"jerry","jerry@atguigu","1");
-            boolean b = mapper.updateEmp(employee);
-            System.out.println(b);
+//            Employee employee = new Employee(1,"jerry","jerry@atguigu","1");
+//            boolean b = mapper.updateEmp(employee);
+//            System.out.println(b);
             //测试删除
 //            mapper.deleteEmpById(2);
             //2.手动提交
