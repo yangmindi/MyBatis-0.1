@@ -1,4 +1,4 @@
-package atguigu.mybatis;
+package atguigu.mybatis.bean;
 
 public class Employee {
     private Integer id;
