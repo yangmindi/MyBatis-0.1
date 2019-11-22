@@ -10,7 +10,7 @@ id:唯一标识
 resultType:返回值类型
 #{id}:从传递过来的参数中取出id
 -->
-    <select id="getEmpById" resultType="atguigu.mybatis.bean.Employee">
+    <select id="getEmpById" resultType="emp">
         select id,last_name lastname,email,gender from tbl_employee where id = #{id}
     </select>
 </mapper>

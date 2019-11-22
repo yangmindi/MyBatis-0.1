@@ -3,6 +3,7 @@ package atguigu.mybatis.test;
 
 import atguigu.mybatis.bean.Employee;
 import atguigu.mybatis.dao.EmployeeMapper;
+import atguigu.mybatis.dao.EmployeeMapperAnnotation;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -23,7 +24,7 @@ public class MyBatisTest {
      */
     @Test
     public void test() throws IOException {
-        String resource = "mybatis-config.xml";
+        String resource = "atguigu.mybatis.dao/mybatis-config.xml";
         InputStream inputStream = Resources.getResourceAsStream(resource);
         SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
         //2.获取sqlSession实例，能直接执行已经映射的sql语句
@@ -42,7 +43,7 @@ public class MyBatisTest {
     @Test
     public void test01() throws IOException {
         //1.获取sqlSessionFactory对象
-        String resource = "mybatis-config.xml";
+        String resource = "atguigu.mybatis.dao/mybatis-config.xml";
         InputStream inputStream = Resources.getResourceAsStream(resource);
         SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
 
@@ -61,13 +62,26 @@ public class MyBatisTest {
 
     @Test
     public void test02() throws IOException {
-        String resourc = "mybatis-config.xml";
+        String resourc = "atguigu.mybatis.dao/mybatis-config.xml";
         InputStream inputStream = Resources.getResourceAsStream(resourc);
         SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
         SqlSession session = sqlSessionFactory.openSession();
         EmployeeMapper mapper = session.getMapper(EmployeeMapper.class);
         Employee empById = mapper.getEmpById(1);
+        System.out.println(mapper.getClass());
         System.out.println(empById);
 
     }
+
+    @Test
+    public void test03() throws IOException {
+        String reources = "atguigu.mybatis.dao/mybatis-config.xml";
+        InputStream resourceAsStream = Resources.getResourceAsStream(reources);
+        SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(resourceAsStream);
+        SqlSession openSession = sqlSessionFactory.openSession();
+        EmployeeMapperAnnotation mapper = openSession.getMapper(EmployeeMapperAnnotation.class);
+        Employee empById = mapper.getEmpById(1);
+        System.out.println(empById);
+    }
 }
+
