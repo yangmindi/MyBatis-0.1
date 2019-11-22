@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.atguigu.mybatis.dao.EmployeeMapper">
+
+<!--
+namespace:名称空间,  指定为接口的全类名
+id:唯一标识
+resultType:返回值类型
+#{id}:从传递过来的参数中取出id
+-->
+    <select id="getEmpById" resultType="emp">
+        select id,last_name lastname,email,gender from tbl_employee where id = #{id}
+    </select>
+<!--    public void addEmp(Employee employee);-->
+    <insert id="addEmp" parameterType="com.atguigu.mybatis.bean.Employee">
+        insert into tbl_employee(last_name,email,gender)
+        values(#{lastName},#{email},#{gender})
+    </insert>
+<!--    public void updateEmp(Employee employee);-->
+    <update id="updateEmp" parameterType="com.atguigu.mybatis.bean.Employee">
+        update tbl_employee
+        set last_name=#{lastName},email=#{email},gender=#{gender}
+        where id=#{id}
+    </update>
+<!--    public void deleteEmpById(Integer id);-->
+    <delete id="deleteEmpById">
+        delete from tbl_employee where id=#{id}
+    </delete>
+</mapper>
