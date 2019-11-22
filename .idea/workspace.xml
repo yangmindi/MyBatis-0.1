@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a61b3b5a-cd4b-43d9-a4ce-0142d2b79610" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/MyBattis-mapper/src/main/java/com/atguigu/mybatis/dao/EmployeeMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/MyBattis-mapper/src/main/java/com/atguigu/mybatis/dao/EmployeeMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MyBattis-mapper/src/main/java/com/atguigu/mybatis/test/MyBatisTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/MyBattis-mapper/src/main/java/com/atguigu/mybatis/test/MyBatisTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MyBattis-mapper/src/main/resources/EmployeeMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/MyBattis-mapper/src/main/resources/EmployeeMapper.xml" afterDir="false" />
     </list>
@@ -40,8 +41,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MyBattis-mapper/src/main/java/com/atguigu/mybatis/dao/EmployeeMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+            <state relative-caret-position="130">
+              <caret line="5" column="70" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="70" />
             </state>
           </provider>
         </entry>
@@ -70,8 +71,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MyBattis-mapper/src/main/resources/EmployeeMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="211">
-              <caret line="17" column="43" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
+            <state relative-caret-position="286">
+              <caret line="14" column="74" selection-start-line="14" selection-start-column="74" selection-end-line="14" selection-end-column="74" />
             </state>
           </provider>
         </entry>
@@ -79,8 +80,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/MyBattis-mapper/src/main/java/com/atguigu/mybatis/test/MyBatisTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="97" column="47" selection-start-line="97" selection-start-column="47" selection-end-line="97" selection-end-column="47" />
+            <state relative-caret-position="260">
+              <caret line="120" column="47" selection-start-line="120" selection-start-column="47" selection-end-line="120" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -371,7 +372,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.MyBatisTest.test04">
+  <component name="RunManager" selected="TestNG.MyBatisTest.test05">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -434,25 +435,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyBatisTest.test02" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="MyBatis" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="atguigu.mybatis.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="atguigu.mybatis.test" />
-      <option name="MAIN_CLASS_NAME" value="atguigu.mybatis.test.MyBatisTest" />
-      <option name="METHOD_NAME" value="test02" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="MyBatisTest.test03 (1)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MyBattis-mapper" />
       <extension name="coverage">
@@ -491,6 +473,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MyBatisTest.test05" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="MyBattis-mapper" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.atguigu.mybatis.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.atguigu.mybatis.test" />
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.mybatis.test.MyBatisTest" />
+      <option name="METHOD_NAME" value="test05" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="TestNG">
       <option name="TEST_OBJECT" value="CLASS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -502,11 +503,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.MyBatisTest.test05" />
         <item itemvalue="TestNG.MyBatisTest.test04" />
         <item itemvalue="TestNG.MyBatisTest.test02 (1)" />
         <item itemvalue="TestNG.MyBatisTest.test03 (1)" />
         <item itemvalue="TestNG.MyBatisTest.test01 (1)" />
-        <item itemvalue="TestNG.MyBatisTest.test02" />
       </list>
     </recent_temporary>
   </component>
@@ -523,14 +524,11 @@
       <workItem from="1574307154341" duration="2494000" />
       <workItem from="1574322544875" duration="44000" />
       <workItem from="1574330977467" duration="731000" />
-      <workItem from="1574416888362" duration="5369000" />
+      <workItem from="1574416888362" duration="6207000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MyBatisTest_test03_(1) - 2019.11.22 at 19h 57m 53s.xml">
-      <configuration name="MyBatisTest.test03 (1)" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="MyBatisTest_test03_(1) - 2019.11.22 at 19h 58m 00s.xml">
       <configuration name="MyBatisTest.test03 (1)" configurationId="TestNG" />
     </history-entry>
@@ -558,9 +556,12 @@
     <history-entry file="MyBatisTest_test04 - 2019.11.22 at 20h 11m 59s.xml">
       <configuration name="MyBatisTest.test04" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="MyBatisTest_test04 - 2019.11.22 at 20h 22m 27s.xml">
+      <configuration name="MyBatisTest.test04" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8638000" />
+    <option name="totallyTimeSpent" value="9476000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="0" width="1062" height="830" extended-state="0" />
@@ -705,24 +706,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MyBattis-mapper/src/main/java/com/atguigu/mybatis/dao/EmployeeMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MyBattis-mapper/src/main/resources/com.atguigu.mybatis/dao/mybatis-config.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
           <caret line="29" column="14" lean-forward="true" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MyBattis-mapper/src/main/resources/EmployeeMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="17" column="43" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
         </state>
       </provider>
     </entry>
@@ -733,10 +720,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/MyBattis-mapper/src/main/java/com/atguigu/mybatis/dao/EmployeeMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="5" column="70" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyBattis-mapper/src/main/resources/EmployeeMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="14" column="74" selection-start-line="14" selection-start-column="74" selection-end-line="14" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/MyBattis-mapper/src/main/java/com/atguigu/mybatis/test/MyBatisTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="97" column="47" selection-start-line="97" selection-start-column="47" selection-end-line="97" selection-end-column="47" />
+        <state relative-caret-position="260">
+          <caret line="120" column="47" selection-start-line="120" selection-start-column="47" selection-end-line="120" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -108,5 +108,21 @@ public class MyBatisTest {
             openSession.close();
         }
     }
+
+    @Test
+    public void test05() throws IOException {
+        String reources = "com.atguigu.mybatis/dao/mybatis-config.xml";
+        InputStream resourceAsStream = Resources.getResourceAsStream(reources);
+        SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(resourceAsStream);
+        //1.获得到的SqlSession不会自动提交数据
+        SqlSession openSession = sqlSessionFactory.openSession();
+        try {
+            EmployeeMapper mapper = openSession.getMapper(EmployeeMapper.class);
+            Employee jerry = mapper.getEmpByIdAndLastName(1, "jerry");
+            System.out.println(jerry);
+        }finally {
+            openSession.close();
+        }
+    }
 }
 
