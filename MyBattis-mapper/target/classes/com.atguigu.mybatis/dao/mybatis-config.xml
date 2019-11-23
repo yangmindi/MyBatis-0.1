@@ -26,6 +26,7 @@
     <mappers>
 <!--        <mapper class="atguigu.mybatis.dao.EmployeeMapperAnnotation"></mapper>-->
         <mapper resource="EmployeeMapper.xml" />
+        <mapper resource="EmployeeMapperPlus.xml"></mapper>
 <!--        <package name="com.atguigu.mybatis"/>-->
     </mappers>
 

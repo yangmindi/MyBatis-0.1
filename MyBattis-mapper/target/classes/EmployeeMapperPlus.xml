@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.atguigu.mybatis.dao.EmployeeMapperPlus">
+
+    <resultMap id="MyEmp" type="com.atguigu.mybatis.bean.Employee">
+<!--        colume:数据库中的属性
+            property：JavaBean中的属性-->
+        <id column="id" property="id"></id>
+<!--        定义普通列封装规则-->
+        <result column="last_name" property="lastName"></result>
+<!--        其他不指定的列会自动封装，我们只要写resultMap就把全部的以你割舍都写上-->
+        <result column="email" property="email"></result>
+        <result column="gender" property="gender"></result>
+    </resultMap>
+
+<!--    public Employee getEmpById(Integer id);-->
+    <select id="getEmpById" resultMap="MyEmp">
+        select * from tbl_employee where id=#{id};
+    </select>
+</mapper>

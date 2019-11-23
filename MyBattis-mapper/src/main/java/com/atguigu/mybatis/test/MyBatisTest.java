@@ -4,6 +4,7 @@ package com.atguigu.mybatis.test;
 import com.atguigu.mybatis.bean.Employee;
 import com.atguigu.mybatis.dao.EmployeeMapper;
 import com.atguigu.mybatis.dao.EmployeeMapperAnnotation;
+import com.atguigu.mybatis.dao.EmployeeMapperPlus;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -13,6 +14,7 @@ import org.testng.annotations.Test;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 
@@ -122,14 +124,36 @@ public class MyBatisTest {
             EmployeeMapper mapper = openSession.getMapper(EmployeeMapper.class);
 //            Employee jerry = mapper.getEmpByIdAndLastName(1, "jerry");
 //            System.out.println(jerry);
-            Map<String,Object> map = new HashMap();
-            map.put("id",1);
-            map.put("lastName","jerry");
-            Employee empByMap = mapper.getEmpByMap(map);
-            System.out.println(empByMap);
+//            Map<String,Object> map = new HashMap();
+//            map.put("id",1);
+//            map.put("lastName","jerry");
+//            Employee empByMap = mapper.getEmpByMap(map);
+//            List<Employee> empByLastNameLike = mapper.getEmpByLastNameLike("%e%");
+//            for (Employee employee : empByLastNameLike) {
+//                System.out.println(employee);
+//            }
+//            System.out.println(empByMap);
+
+//            Map<String, Object> empByIdReturnMap = mapper.getEmpByIdReturnMap(1);
+//            System.out.println(empByIdReturnMap);
+
+            Map<String, Employee> empByLastNameLikeReturnMap = mapper.getEmpByLastNameLikeReturnMap("%y%");
+            System.out.println(empByLastNameLikeReturnMap);
         }finally {
             openSession.close();
         }
+    }
+
+    @Test
+    public void test06() throws IOException {
+        String reources = "com.atguigu.mybatis/dao/mybatis-config.xml";
+        InputStream resourceAsStream = Resources.getResourceAsStream(reources);
+        SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(resourceAsStream);
+        SqlSession openSession = sqlSessionFactory.openSession();
+        EmployeeMapperPlus mapper = openSession.getMapper(EmployeeMapperPlus.class);
+        Employee empById = mapper.getEmpById(1);
+        System.out.println(empById);
+        openSession.close();
     }
 }
 

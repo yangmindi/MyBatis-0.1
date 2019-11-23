@@ -10,6 +10,20 @@ id:唯一标识
 resultType:返回值类型
 #{id}:从传递过来的参数中取出id
 -->
+<!--        public Map<Integer,Employee> getEmpByLastNameLikeReturnMap(String lastName);-->
+    <select id="getEmpByLastNameLikeReturnMap" resultType="com.atguigu.mybatis.bean.Employee">
+        select * from tbl_employee where last_name like #{lastName};
+    </select>
+
+<!--    public Map<String,Object> getEmpByIdReturnMap(Integer id);-->
+    <select id="getEmpByIdReturnMap" resultType="map">
+        select * from tbl_employee where id=#{id};
+    </select>
+
+<!--public List<Employee> getEmpByLastNameLike(String lastName);-->
+    <select id="getEmpByLastNameLike" resultType="com.atguigu.mybatis.bean.Employee">
+        select * from tbl_employee where last_name like #{lastName}
+    </select>
 
 <!--    public Employee getEmpByMap(Map<String,Object> map);-->
     <select id="getEmpByMap" resultType="com.atguigu.mybatis.bean.Employee">
