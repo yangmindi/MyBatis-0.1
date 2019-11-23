@@ -5,6 +5,10 @@
 <mapper namespace="com.atguigu.mybatis.dao.EmployeeMapperPlus">
 
 
+    <!--        public List<Employee> getEmpsByDeptId(Integer deptId);-->
+    <select id="getEmpsByDeptId" resultType="com.atguigu.mybatis.bean.Employee">
+        select * from tbl_employee where d_id=#{deptId}
+    </select>
     <!-- 使用association进行分步查询：
         1、先按照员工id查询员工信息
         2、根据查询员工信息中的d_id值去部门表查出部门信息

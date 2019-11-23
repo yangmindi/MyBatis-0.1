@@ -172,9 +172,12 @@ public class MyBatisTest {
         SqlSession openSession = sqlSessionFactory.openSession();
         try {
             DepartmentMapper mapper = openSession.getMapper(DepartmentMapper.class);
-            Department deptByIdPlus = mapper.getDeptByIdPlus(1);
-            System.out.println(deptByIdPlus);
-            System.out.println(deptByIdPlus.getEmps());
+//            Department deptByIdPlus = mapper.getDeptByIdPlus(1);
+//            System.out.println(deptByIdPlus);
+//            System.out.println(deptByIdPlus.getEmps());
+            Department deptByIdStep = mapper.getDeptByIdStep(1);
+            System.out.println(deptByIdStep);
+            System.out.println(deptByIdStep.getEmps());
         }finally {
             openSession.close();
         }

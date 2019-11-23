@@ -2,20 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a61b3b5a-cd4b-43d9-a4ce-0142d2b79610" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/MyBattis-mapper/src/main/java/com/atguigu/mybatis/bean/Department.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MyBattis-mapper/src/main/java/com/atguigu/mybatis/dao/DepartmentMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MyBattis-mapper/src/main/resources/DepartmentMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyBattis-mapper/src/main/java/com/atguigu/mybatis/bean/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/MyBattis-mapper/src/main/java/com/atguigu/mybatis/bean/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyBattis-mapper/src/main/java/com/atguigu/mybatis/dao/DepartmentMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/MyBattis-mapper/src/main/java/com/atguigu/mybatis/dao/DepartmentMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MyBattis-mapper/src/main/java/com/atguigu/mybatis/dao/EmployeeMapperPlus.java" beforeDir="false" afterPath="$PROJECT_DIR$/MyBattis-mapper/src/main/java/com/atguigu/mybatis/dao/EmployeeMapperPlus.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MyBattis-mapper/src/main/java/com/atguigu/mybatis/test/MyBatisTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/MyBattis-mapper/src/main/java/com/atguigu/mybatis/test/MyBatisTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyBattis-mapper/src/main/resources/DepartmentMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/MyBattis-mapper/src/main/resources/DepartmentMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MyBattis-mapper/src/main/resources/EmployeeMapperPlus.xml" beforeDir="false" afterPath="$PROJECT_DIR$/MyBattis-mapper/src/main/resources/EmployeeMapperPlus.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyBattis-mapper/src/main/resources/com.atguigu.mybatis/dao/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/MyBattis-mapper/src/main/resources/com.atguigu.mybatis/dao/mybatis-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyBattis-mapper/target/classes/EmployeeMapperPlus.xml" beforeDir="false" afterPath="$PROJECT_DIR$/MyBattis-mapper/target/classes/EmployeeMapperPlus.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyBattis-mapper/target/classes/com.atguigu.mybatis/dao/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/MyBattis-mapper/target/classes/com.atguigu.mybatis/dao/mybatis-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyBattis-mapper/target/classes/com/atguigu/mybatis/bean/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/MyBattis-mapper/target/classes/com/atguigu/mybatis/bean/Employee.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyBattis-mapper/target/classes/com/atguigu/mybatis/dao/EmployeeMapperPlus.class" beforeDir="false" afterPath="$PROJECT_DIR$/MyBattis-mapper/target/classes/com/atguigu/mybatis/dao/EmployeeMapperPlus.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyBattis-mapper/target/classes/com/atguigu/mybatis/test/MyBatisTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/MyBattis-mapper/target/classes/com/atguigu/mybatis/test/MyBatisTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -46,8 +37,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MyBattis-mapper/src/main/java/com/atguigu/mybatis/dao/EmployeeMapperPlus.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="9" column="34" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="34" />
+            <state relative-caret-position="312">
+              <caret line="12" selection-start-line="12" selection-end-line="12" selection-end-column="58" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -55,26 +49,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MyBattis-mapper/src/main/resources/EmployeeMapperPlus.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="81" column="43" selection-start-line="81" selection-start-column="43" selection-end-line="81" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/MyBattis-mapper/src/main/resources/DepartmentMapper.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="211">
-              <caret line="21" column="48" lean-forward="true" selection-start-line="21" selection-start-column="48" selection-end-line="21" selection-end-column="48" />
+            <state relative-caret-position="234">
+              <caret line="9" column="55" selection-start-line="9" selection-start-column="55" selection-end-line="9" selection-end-column="55" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MyBattis-mapper/src/main/resources/com.atguigu.mybatis/dao/mybatis-config.xml">
+        <entry file="file://$PROJECT_DIR$/MyBattis-mapper/src/main/resources/DepartmentMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="29" column="35" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
+            <state relative-caret-position="260">
+              <caret line="16" column="61" selection-start-line="16" selection-start-column="61" selection-end-line="16" selection-end-column="61" />
             </state>
           </provider>
         </entry>
@@ -83,22 +68,7 @@
         <entry file="file://$PROJECT_DIR$/MyBattis-mapper/src/main/java/com/atguigu/mybatis/dao/DepartmentMapper.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="234">
-              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MyBattis-mapper/src/main/java/com/atguigu/mybatis/bean/Department.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="8" column="13" lean-forward="true" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-              <folding>
-                <element signature="e#723#724#0" expanded="true" />
-                <element signature="e#750#751#0" expanded="true" />
-                <element signature="e#798#799#0" expanded="true" />
-                <element signature="e#830#831#0" expanded="true" />
-              </folding>
+              <caret line="9" selection-start-line="9" selection-end-line="9" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -106,17 +76,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MyBattis-mapper/src/main/resources/EmployeeMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1043">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+            <state relative-caret-position="-26">
+              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/MyBattis-mapper/src/main/java/com/atguigu/mybatis/test/MyBatisTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="293">
-              <caret line="176" column="54" selection-start-line="176" selection-start-column="54" selection-end-line="176" selection-end-column="54" />
+            <state relative-caret-position="385">
+              <caret line="179" column="53" selection-start-line="179" selection-start-column="53" selection-end-line="179" selection-end-column="53" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -187,17 +157,17 @@
         <option value="$PROJECT_DIR$/MyBattis-mapper/src/main/resources/EmployeeMapper.xml" />
         <option value="$PROJECT_DIR$/MyBattis-mapper/src/main/java/com/atguigu/mybatis/dao/EmployeeMapper.java" />
         <option value="$PROJECT_DIR$/MyBattis-mapper/src/main/java/com/atguigu/mybatis/bean/Employee.java" />
-        <option value="$PROJECT_DIR$/MyBattis-mapper/src/main/resources/EmployeeMapperPlus.xml" />
-        <option value="$PROJECT_DIR$/MyBattis-mapper/src/main/java/com/atguigu/mybatis/dao/EmployeeMapperPlus.java" />
         <option value="$PROJECT_DIR$/MyBattis-mapper/src/main/resources/com.atguigu.mybatis/dao/mybatis-config.xml" />
         <option value="$PROJECT_DIR$/MyBattis-mapper/src/main/java/com/atguigu/mybatis/bean/Department.java" />
+        <option value="$PROJECT_DIR$/MyBattis-mapper/src/main/java/com/atguigu/mybatis/dao/EmployeeMapperPlus.java" />
+        <option value="$PROJECT_DIR$/MyBattis-mapper/src/main/resources/EmployeeMapperPlus.xml" />
         <option value="$PROJECT_DIR$/MyBattis-mapper/src/main/java/com/atguigu/mybatis/dao/DepartmentMapper.java" />
-        <option value="$PROJECT_DIR$/MyBattis-mapper/src/main/java/com/atguigu/mybatis/test/MyBatisTest.java" />
         <option value="$PROJECT_DIR$/MyBattis-mapper/src/main/resources/DepartmentMapper.xml" />
+        <option value="$PROJECT_DIR$/MyBattis-mapper/src/main/java/com/atguigu/mybatis/test/MyBatisTest.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="-8" />
     <option name="width" value="1245" />
     <option name="height" value="1038" />
@@ -575,20 +545,11 @@
       <workItem from="1574322544875" duration="44000" />
       <workItem from="1574330977467" duration="731000" />
       <workItem from="1574416888362" duration="7992000" />
-      <workItem from="1574477308995" duration="12778000" />
+      <workItem from="1574477308995" duration="14156000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MyBatisTest_test06 - 2019.11.23 at 15h 29m 35s.xml">
-      <configuration name="MyBatisTest.test06" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="MyBatisTest_test06 - 2019.11.23 at 15h 29m 51s.xml">
-      <configuration name="MyBatisTest.test06" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="MyBatisTest_test06 - 2019.11.23 at 15h 31m 24s.xml">
-      <configuration name="MyBatisTest.test06" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="MyBatisTest_test06 - 2019.11.23 at 15h 42m 43s.xml">
       <configuration name="MyBatisTest.test06" configurationId="TestNG" />
     </history-entry>
@@ -610,9 +571,18 @@
     <history-entry file="MyBatisTest_test07 - 2019.11.23 at 16h 28m 50s.xml">
       <configuration name="MyBatisTest.test07" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="MyBatisTest_test07 - 2019.11.23 at 16h 30m 16s.xml">
+      <configuration name="MyBatisTest.test07" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="MyBatisTest_test07 - 2019.11.23 at 16h 30m 33s.xml">
+      <configuration name="MyBatisTest.test07" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="MyBatisTest_test07 - 2019.11.23 at 16h 31m 52s.xml">
+      <configuration name="MyBatisTest.test07" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24039000" />
+    <option name="totallyTimeSpent" value="25417000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="0" width="996" height="830" extended-state="0" />
@@ -625,7 +595,7 @@
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3295129" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4989339" visible="true" weight="0.13467048" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4989339" weight="0.5272206" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -653,7 +623,7 @@
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3295129" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4989339" weight="0.46131805" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4989339" weight="0.5272206" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -661,10 +631,10 @@
       <window_info anchor="bottom" id="LuaCheck" order="7" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.36103153" />
-      <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info anchor="bottom" id="Database Changes" order="11" />
-      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5010661" side_tool="true" weight="0.42979944" />
-      <window_info anchor="bottom" id="Messages" order="13" weight="0.47277936" />
+      <window_info anchor="bottom" id="Database Changes" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5010661" side_tool="true" weight="0.42979944" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.47277936" />
+      <window_info anchor="bottom" id="Version Control" order="13" weight="0.3295129" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -757,13 +727,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MyBattis-mapper/src/main/java/com/atguigu/mybatis/dao/EmployeeMapperPlus.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="9" column="34" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MyBattis-mapper/src/main/java/com/atguigu/mybatis/dao/EmployeeMapperAnnotation.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="182">
@@ -803,31 +766,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MyBattis-mapper/src/main/resources/EmployeeMapperPlus.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="81" column="43" selection-start-line="81" selection-start-column="43" selection-end-line="81" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MyBattis-mapper/src/main/resources/EmployeeMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1043">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        <state relative-caret-position="-26">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MyBattis-mapper/src/main/resources/com.atguigu.mybatis/dao/mybatis-config.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
+        <state relative-caret-position="385">
           <caret line="29" column="35" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MyBattis-mapper/src/main/java/com/atguigu/mybatis/bean/Department.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="8" column="13" lean-forward="true" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        <state relative-caret-position="156">
+          <caret line="6" column="25" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="25" />
           <folding>
             <element signature="e#723#724#0" expanded="true" />
             <element signature="e#750#751#0" expanded="true" />
@@ -837,27 +793,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MyBattis-mapper/src/main/java/com/atguigu/mybatis/test/MyBatisTest.java">
+    <entry file="file://$PROJECT_DIR$/MyBattis-mapper/src/main/java/com/atguigu/mybatis/dao/EmployeeMapperPlus.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="176" column="54" selection-start-line="176" selection-start-column="54" selection-end-line="176" selection-end-column="54" />
+        <state relative-caret-position="312">
+          <caret line="12" selection-start-line="12" selection-end-line="12" selection-end-column="58" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/MyBattis-mapper/src/main/resources/EmployeeMapperPlus.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="9" column="55" selection-start-line="9" selection-start-column="55" selection-end-line="9" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/MyBattis-mapper/src/main/java/com/atguigu/mybatis/dao/DepartmentMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+          <caret line="9" selection-start-line="9" selection-end-line="9" selection-end-column="50" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MyBattis-mapper/src/main/resources/DepartmentMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="21" column="48" lean-forward="true" selection-start-line="21" selection-start-column="48" selection-end-line="21" selection-end-column="48" />
+        <state relative-caret-position="260">
+          <caret line="16" column="61" selection-start-line="16" selection-start-column="61" selection-end-line="16" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyBattis-mapper/src/main/java/com/atguigu/mybatis/test/MyBatisTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="385">
+          <caret line="179" column="53" selection-start-line="179" selection-start-column="53" selection-end-line="179" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
