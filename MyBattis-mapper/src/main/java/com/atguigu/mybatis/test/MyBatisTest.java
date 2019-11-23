@@ -1,7 +1,9 @@
 package com.atguigu.mybatis.test;
 
 
+import com.atguigu.mybatis.bean.Department;
 import com.atguigu.mybatis.bean.Employee;
+import com.atguigu.mybatis.dao.DepartmentMapper;
 import com.atguigu.mybatis.dao.EmployeeMapper;
 import com.atguigu.mybatis.dao.EmployeeMapperAnnotation;
 import com.atguigu.mybatis.dao.EmployeeMapperPlus;
@@ -151,9 +153,31 @@ public class MyBatisTest {
         SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(resourceAsStream);
         SqlSession openSession = sqlSessionFactory.openSession();
         EmployeeMapperPlus mapper = openSession.getMapper(EmployeeMapperPlus.class);
-        Employee empById = mapper.getEmpById(1);
-        System.out.println(empById);
+
+//        Employee empAndDept = mapper.getEmpAndDept(1);
+//        System.out.println(empAndDept);
+//        System.out.println(empAndDept.getDept());
+
+        Employee employee = mapper.getEmpByIdStep(1);
+        System.out.println(employee);
+        System.out.println(employee.getDept());
         openSession.close();
+    }
+
+    @Test
+    public void test07() throws IOException {
+        String reources = "com.atguigu.mybatis/dao/mybatis-config.xml";
+        InputStream resourceAsStream = Resources.getResourceAsStream(reources);
+        SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(resourceAsStream);
+        SqlSession openSession = sqlSessionFactory.openSession();
+        try {
+            DepartmentMapper mapper = openSession.getMapper(DepartmentMapper.class);
+            Department deptByIdPlus = mapper.getDeptByIdPlus(1);
+            System.out.println(deptByIdPlus);
+            System.out.println(deptByIdPlus.getEmps());
+        }finally {
+            openSession.close();
+        }
     }
 }
 
