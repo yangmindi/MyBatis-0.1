@@ -65,4 +65,32 @@
             </choose>
         </where>
     </select>
+
+    <!--        public void updateEmp(Employee employee);-->
+    <update id="updateEmp">
+        update tbl_employee
+        <trim prefix="set" suffixOverrides=",">
+            <if test="lastName!=null">
+                last_name = #{lastName},
+            </if>
+            <if test="email!=null">
+                email = #{email},
+            </if>
+            <if test="gender!=null">
+                gender = #{gender}
+            </if>
+        </trim>
+        <!--<set>
+            <if test="lastName!=null">
+                last_name = #{lastName},
+            </if>
+            <if test="email!=null">
+                email = #{email},
+            </if>
+            <if test="gender!=null">
+                gender = #{gender}
+            </if>
+        </set>-->
+        where id=#{id}
+    </update>
 </mapper>

@@ -190,7 +190,7 @@ public class MyBatisTest {
         SqlSession openSession = sqlSessionFactory.openSession();
         EmployeeMapperDynamicSQL mapper = openSession.getMapper(EmployeeMapperDynamicSQL.class);
 
-        Employee employee = new Employee(null,"%o%",null,null);
+        Employee employee = new Employee(1,"Admin",null,null);
 //        List<Employee> empsByConditionIf = mapper.getEmpsByConditionIf(employee);
         //查询的时候sql可能会有问题
         //1.给where后面加 1=1，以后条件都加and
@@ -202,10 +202,15 @@ public class MyBatisTest {
 //            System.out.println(employee1);
 //        }
 
-        List<Employee> empsByConditionChoose = mapper.getEmpsByConditionChoose(employee);
-        for (Employee employee1 : empsByConditionChoose) {
-            System.out.println(employee1);
-        }
+        //测试choose
+//        List<Employee> empsByConditionChoose = mapper.getEmpsByConditionChoose(employee);
+//        for (Employee employee1 : empsByConditionChoose) {
+//            System.out.println(employee1);
+//        }
+
+        //测试set
+        mapper.updateEmp(employee);
+        openSession.commit();
         openSession.close();
     }
 }
