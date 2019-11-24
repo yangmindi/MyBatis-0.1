@@ -14,6 +14,7 @@ import org.testng.annotations.Test;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 import java.util.zip.InflaterInputStream;
@@ -209,8 +210,13 @@ public class MyBatisTest {
 //        }
 
         //测试set
-        mapper.updateEmp(employee);
-        openSession.commit();
+//        mapper.updateEmp(employee);
+//        openSession.commit();
+
+        List<Employee> empsByConditionForeach = mapper.getEmpsByConditionForeach(Arrays.asList(1, 2, 3, 4));
+        for (Employee byConditionForeach : empsByConditionForeach) {
+            System.out.println(byConditionForeach);
+        }
         openSession.close();
     }
 }
