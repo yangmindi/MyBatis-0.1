@@ -17,5 +17,7 @@ public interface EmployeeMapperDynamicSQL {
 
     //查询员工id'在给定集合中的
     public List<Employee> getEmpsByConditionForeach(@Param("ids")List<Integer> ids);
+
+    public void addEmps(@Param("emps") List<Employee> emps);
 }
 

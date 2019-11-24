@@ -94,13 +94,13 @@
         where id=#{id}
     </update>
 
-<!--    collection：指定要遍历的集合
-            list类型的参数会特殊处理封装在map中，map的key就叫list
-        item：将当前遍历出的元素赋值给指定的变量
-        separator：每个元素之间的分隔符
-        open：遍历出所有结果拼接一个开始的字符
-        close：遍历出所有结果拼接一个结束的字符
-        #{变量名}就能去除变量的值也就是当前遍历出的元素-->
+    <!--    collection：指定要遍历的集合
+                list类型的参数会特殊处理封装在map中，map的key就叫list
+            item：将当前遍历出的元素赋值给指定的变量
+            separator：每个元素之间的分隔符
+            open：遍历出所有结果拼接一个开始的字符
+            close：遍历出所有结果拼接一个结束的字符
+            #{变量名}就能去除变量的值也就是当前遍历出的元素-->
     <!--public List<Employee> getEmpsByConditionForeach(@Param("ids")List<Integer> ids);-->
     <select id="getEmpsByConditionForeach" resultType="com.atguigu.mybatis.bean.Employee">
         select * from tbl_employee where id in
@@ -109,4 +109,13 @@
             #{item_id}
         </foreach>
     </select>
+
+    <!--public void addEmps(@Param("emps") List<Employee> emps);-->
+    <insert id="addEmps">
+        insert into tbl_employee(last_name,email,gender,d_id)
+        values
+        <foreach collection="emps" separator="," item="emp">
+            (#{emp.lastName},#{emp.email},#{emp.gender},#{emp.dept.id})
+        </foreach>
+    </insert>
 </mapper>

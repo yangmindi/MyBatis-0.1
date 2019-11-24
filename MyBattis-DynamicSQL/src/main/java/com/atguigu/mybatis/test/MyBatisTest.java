@@ -14,6 +14,7 @@ import org.testng.annotations.Test;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
@@ -218,6 +219,24 @@ public class MyBatisTest {
             System.out.println(byConditionForeach);
         }
         openSession.close();
+    }
+
+    @Test
+    public void testBatchSave() throws IOException {
+        String resources = "com.atguigu.mybatis.dao/mybatis-config.xml";
+        InputStream inputStream = Resources.getResourceAsStream(resources);
+        SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
+        SqlSession openSession = sqlSessionFactory.openSession();
+        try {
+            EmployeeMapperDynamicSQL mapper = openSession.getMapper(EmployeeMapperDynamicSQL.class);
+            List<Employee> emps = new ArrayList<Employee>();
+            emps.add(new Employee(null,"smith","simth@atguigu.com","1"));
+            emps.add(new Employee(null,"allen","allen@atguigu.com","0"));
+            mapper.addEmps(emps);
+            openSession.commit();
+        }finally {
+            openSession.close();
+        }
     }
 }
 
