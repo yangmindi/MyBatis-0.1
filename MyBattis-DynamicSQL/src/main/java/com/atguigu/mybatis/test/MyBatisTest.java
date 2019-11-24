@@ -229,20 +229,20 @@ public class MyBatisTest {
         SqlSession openSession = sqlSessionFactory.openSession();
         try {
             EmployeeMapperDynamicSQL mapper = openSession.getMapper(EmployeeMapperDynamicSQL.class);
-//            List<Employee> emps = new ArrayList<Employee>();
-//            emps.add(new Employee(null,"smith","simth@atguigu.com","1"));
-//            emps.add(new Employee(null,"allen","allen@atguigu.com","0"));
-//            mapper.addEmps(emps);
-//            openSession.commit();
+            List<Employee> emps = new ArrayList<Employee>();
+            emps.add(new Employee(null,"smith","simth@atguigu.com","1"));
+            emps.add(new Employee(null,"allen","allen@atguigu.com","0"));
+            mapper.addEmps(emps);
+            openSession.commit();
 
-            EmployeeMapperDynamicSQL mapper1 = openSession.getMapper(EmployeeMapperDynamicSQL.class);
-
-            Employee employee = new Employee();
-            employee.setLastName("e");
-            List<Employee> empsTestInnerParameter = mapper1.getEmpsTestInnerParameter(employee);
-            for (Employee employee1 : empsTestInnerParameter) {
-                System.out.println(employee1);
-            }
+//            EmployeeMapperDynamicSQL mapper1 = openSession.getMapper(EmployeeMapperDynamicSQL.class);
+//
+//            Employee employee = new Employee();
+//            employee.setLastName("e");
+//            List<Employee> empsTestInnerParameter = mapper1.getEmpsTestInnerParameter(employee);
+//            for (Employee employee1 : empsTestInnerParameter) {
+//                System.out.println(employee1);
+//            }
         }finally {
             openSession.close();
         }
