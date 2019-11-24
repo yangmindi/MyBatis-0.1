@@ -191,12 +191,17 @@ public class MyBatisTest {
         EmployeeMapperDynamicSQL mapper = openSession.getMapper(EmployeeMapperDynamicSQL.class);
 
         Employee employee = new Employee(null,"%o%",null,null);
-        List<Employee> empsByConditionIf = mapper.getEmpsByConditionIf(employee);
+//        List<Employee> empsByConditionIf = mapper.getEmpsByConditionIf(employee);
         //查询的时候sql可能会有问题
         //1.给where后面加 1=1，以后条件都加and
-        for (Employee employee1 : empsByConditionIf) {
+//        for (Employee employee1 : empsByConditionIf) {
+//            System.out.println(employee1);
+//        }
+        List<Employee> empsByConditionTrim = mapper.getEmpsByConditionTrim(employee);
+        for (Employee employee1 : empsByConditionTrim) {
             System.out.println(employee1);
         }
+
         openSession.close();
     }
 }

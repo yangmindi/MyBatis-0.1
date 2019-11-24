@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a61b3b5a-cd4b-43d9-a4ce-0142d2b79610" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/MyBattis-DynamicSQL/src/main/java/com/atguigu/mybatis/dao/EmployeeMapperDynamicSQL.java" beforeDir="false" afterPath="$PROJECT_DIR$/MyBattis-DynamicSQL/src/main/java/com/atguigu/mybatis/dao/EmployeeMapperDynamicSQL.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MyBattis-DynamicSQL/src/main/java/com/atguigu/mybatis/test/MyBatisTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/MyBattis-DynamicSQL/src/main/java/com/atguigu/mybatis/test/MyBatisTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyBattis-DynamicSQL/src/main/resources/EmployeeMapperDynamicSQL.xml" beforeDir="false" afterPath="$PROJECT_DIR$/MyBattis-DynamicSQL/src/main/resources/EmployeeMapperDynamicSQL.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -22,8 +24,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/MyBattis-DynamicSQL/src/main/java/com/atguigu/mybatis/test/MyBatisTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="383">
-              <caret line="192" column="49" selection-start-line="192" selection-start-column="49" selection-end-line="192" selection-end-column="49" />
+            <state relative-caret-position="535">
+              <caret line="201" column="40" selection-start-line="201" selection-start-column="40" selection-end-line="201" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -31,8 +33,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MyBattis-DynamicSQL/src/main/resources/EmployeeMapperDynamicSQL.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="111">
-              <caret line="9" column="13" lean-forward="true" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+            <state relative-caret-position="691">
+              <caret line="45" column="34" selection-start-line="45" selection-start-column="34" selection-end-line="45" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MyBattis-DynamicSQL/src/main/java/com/atguigu/mybatis/dao/EmployeeMapperDynamicSQL.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="312">
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -80,8 +94,8 @@
         <option value="$PROJECT_DIR$/MyBattis-DynamicSQL/src/main/java/mybatis/dao/EmployeeMapperDynamicSQL.java" />
         <option value="$PROJECT_DIR$/MyBattis-DynamicSQL/src/main/java/mybatis/dao/EmployeeMapperPlus.java" />
         <option value="$PROJECT_DIR$/MyBattis-DynamicSQL/src/main/java/com/atguigu/mybatis/dao/EmployeeMapperPlus.java" />
-        <option value="$PROJECT_DIR$/MyBattis-DynamicSQL/src/main/java/com/atguigu/mybatis/dao/EmployeeMapperDynamicSQL.java" />
         <option value="$PROJECT_DIR$/MyBattis-DynamicSQL/src/main/resources/com.atguigu.mybatis.dao/mybatis-config.xml" />
+        <option value="$PROJECT_DIR$/MyBattis-DynamicSQL/src/main/java/com/atguigu/mybatis/dao/EmployeeMapperDynamicSQL.java" />
         <option value="$PROJECT_DIR$/MyBattis-DynamicSQL/src/main/resources/EmployeeMapperDynamicSQL.xml" />
         <option value="$PROJECT_DIR$/MyBattis-DynamicSQL/src/main/java/com/atguigu/mybatis/test/MyBatisTest.java" />
       </list>
@@ -402,23 +416,11 @@
       <workItem from="1574330977467" duration="731000" />
       <workItem from="1574416888362" duration="7992000" />
       <workItem from="1574477308995" duration="15114000" />
-      <workItem from="1574566059991" duration="2200000" />
+      <workItem from="1574566059991" duration="3488000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MyBatisTest_test07 - 2019.11.23 at 16h 30m 33s.xml">
-      <configuration name="MyBatisTest.test07" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="MyBatisTest_test07 - 2019.11.23 at 16h 31m 52s.xml">
-      <configuration name="MyBatisTest.test07" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="MyBatisTest_test07 - 2019.11.23 at 18h 36m 01s.xml">
-      <configuration name="MyBatisTest.test07" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="MyBatisTest_test07 - 2019.11.23 at 18h 37m 38s.xml">
-      <configuration name="MyBatisTest.test07" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="MyBatisTest_test07 - 2019.11.23 at 18h 37m 52s.xml">
       <configuration name="MyBatisTest.test07" configurationId="TestNG" />
     </history-entry>
@@ -437,15 +439,27 @@
     <history-entry file="MyBatisTest_testDynamicSQL - 2019.11.24 at 11h 54m 50s.xml">
       <configuration name="MyBatisTest.testDynamicSQL" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="MyBatisTest_testDynamicSQL - 2019.11.24 at 12h 04m 29s.xml">
+      <configuration name="MyBatisTest.testDynamicSQL" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="MyBatisTest_testDynamicSQL - 2019.11.24 at 12h 05m 36s.xml">
+      <configuration name="MyBatisTest.testDynamicSQL" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="MyBatisTest_testDynamicSQL - 2019.11.24 at 12h 06m 18s.xml">
+      <configuration name="MyBatisTest.testDynamicSQL" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="MyBatisTest_testDynamicSQL - 2019.11.24 at 12h 07m 09s.xml">
+      <configuration name="MyBatisTest.testDynamicSQL" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28575000" />
+    <option name="totallyTimeSpent" value="29863000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="0" width="1013" height="830" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49779737" weight="0.33926702" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49779737" visible="true" weight="0.33926702" />
       <window_info id="Structure" order="1" sideWeight="0.50220263" side_tool="true" weight="0.15549597" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -459,7 +473,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="LuaCheck" order="7" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.35530087" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.08309455" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5010661" side_tool="true" weight="0.42979944" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.47707736" />
@@ -763,16 +777,6 @@
     <entry file="file://$PROJECT_DIR$/MyBattis-DynamicSQL/src/main/resources/DepartmentMapper.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/MyBattis-DynamicSQL/src/main/java/com/atguigu/mybatis/dao/EmployeeMapperDynamicSQL.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="8" column="66" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="66" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MyBattis-DynamicSQL/src/main/resources/com.atguigu.mybatis.dao/mybatis-config.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
@@ -801,17 +805,27 @@
         <state relative-caret-position="-78" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/MyBattis-DynamicSQL/src/main/java/com/atguigu/mybatis/dao/EmployeeMapperDynamicSQL.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/MyBattis-DynamicSQL/src/main/resources/EmployeeMapperDynamicSQL.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="9" column="13" lean-forward="true" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        <state relative-caret-position="691">
+          <caret line="45" column="34" selection-start-line="45" selection-start-column="34" selection-end-line="45" selection-end-column="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MyBattis-DynamicSQL/src/main/java/com/atguigu/mybatis/test/MyBatisTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="192" column="49" selection-start-line="192" selection-start-column="49" selection-end-line="192" selection-end-column="49" />
+        <state relative-caret-position="535">
+          <caret line="201" column="40" selection-start-line="201" selection-start-column="40" selection-end-line="201" selection-end-column="40" />
         </state>
       </provider>
     </entry>

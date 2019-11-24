@@ -27,4 +27,24 @@
             </if>
         </where>
     </select>
+
+    <!--    public List<Employee> getEmpsByConditionTrim(Employee employee);-->
+    <select id="getEmpsByConditionTrim" resultType="com.atguigu.mybatis.bean.Employee">
+        select * from tbl_employee
+        <trim prefix="where" suffixOverrides="and">
+            <if test="id!=null">
+                id = #{id} and
+            </if>
+            <if test="lastName!=null &amp;&amp; lastName!=&quot;&quot;">
+                last_name like #{lastName} and
+            </if>
+            <if test="email!=null and email.trim()!=&quot;&quot;">
+                email = #{email} and
+            </if>
+            <!--  OGNL回进行字符串与数字之间的转换-->
+            <if test="gender==0 or gender==1">
+                gender = #{gender}
+            </if>
+        </trim>
+    </select>
 </mapper>
