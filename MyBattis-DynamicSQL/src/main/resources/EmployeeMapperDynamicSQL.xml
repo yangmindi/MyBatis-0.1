@@ -118,4 +118,13 @@
             (#{emp.lastName},#{emp.email},#{emp.gender},#{emp.dept.id})
         </foreach>
     </insert>
+
+    <!--    public List<Employee> getEmpsTestInnerParameter(Employee employee);-->
+    <select id="getEmpsTestInnerParameter" resultType="com.atguigu.mybatis.bean.Employee">
+        <bind name="_lastName" value="'%'+lastName+'%'"/>
+        select * from tbl_employee
+        <if test="_parameter!=null">
+            where last_name like #{_lastName}
+        </if>
+    </select>
 </mapper>
