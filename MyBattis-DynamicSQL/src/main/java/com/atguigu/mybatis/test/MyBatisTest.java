@@ -197,11 +197,15 @@ public class MyBatisTest {
 //        for (Employee employee1 : empsByConditionIf) {
 //            System.out.println(employee1);
 //        }
-        List<Employee> empsByConditionTrim = mapper.getEmpsByConditionTrim(employee);
-        for (Employee employee1 : empsByConditionTrim) {
+//        List<Employee> empsByConditionTrim = mapper.getEmpsByConditionTrim(employee);
+//        for (Employee employee1 : empsByConditionTrim) {
+//            System.out.println(employee1);
+//        }
+
+        List<Employee> empsByConditionChoose = mapper.getEmpsByConditionChoose(employee);
+        for (Employee employee1 : empsByConditionChoose) {
             System.out.println(employee1);
         }
-
         openSession.close();
     }
 }
