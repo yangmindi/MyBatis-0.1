@@ -11,6 +11,7 @@
     <modules>
         <module>MyBattis-mapper</module>
         <module>MyBattis-DynamicSQL</module>
+        <module>MyBattis-Cache</module>
     </modules>
 
     <dependencies>
