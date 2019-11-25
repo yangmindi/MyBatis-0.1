@@ -1,7 +1,8 @@
 package com.atguigu.mybatis.bean;
+import java.io.Serializable;
 import java.util.List;
 
-public class Department {
+public class Department implements Serializable {
     private Integer id;
     private String departmentName;
     private List<Employee> emps;

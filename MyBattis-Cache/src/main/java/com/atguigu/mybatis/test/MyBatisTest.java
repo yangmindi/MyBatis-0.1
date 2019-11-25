@@ -90,5 +90,28 @@ public class MyBatisTest {
             openSession.close();
         }
     }
+
+    @Test
+    public void testSecondLevelCache() throws IOException {
+        String resources = "com.atguigu.mybatis.dao/mybatis-config.xml";
+        InputStream inputStream = Resources.getResourceAsStream(resources);
+        SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
+        SqlSession openSession = sqlSessionFactory.openSession();
+        SqlSession openSession2 = sqlSessionFactory.openSession();
+        try {
+            EmployeeMapper mapper = openSession.getMapper(EmployeeMapper.class);
+            EmployeeMapper mapper1 = openSession2.getMapper(EmployeeMapper.class);
+
+            Employee empById = mapper.getEmpById(1);
+            System.out.println(empById);
+            openSession.close();
+
+            Employee empById1 = mapper1.getEmpById(1);
+            System.out.println(empById1);
+            openSession2.close();
+        }finally {
+
+        }
+    }
 }
 
